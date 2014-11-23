@@ -38,10 +38,17 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'devise'
+gem 'cancancan'
+gem 'rolify'
+gem "rails-backbone"
+gem 'marionette-rails'
+
 group :development, :test do
   gem 'spring-commands-rspec'
   gem 'rspec-rails'
   gem 'guard-rspec'
+  gem 'thin'
   gem 'rb-fsevent' if `uname` =~ /Darwin/
 end
 

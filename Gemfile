@@ -30,7 +30,7 @@ gem 'spring',        group: :development
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -41,14 +41,32 @@ gem 'spring',        group: :development
 gem 'devise'
 gem 'cancancan'
 gem 'rolify'
+gem 'omniauth'
+
+gem 'thin'
+
 gem "rails-backbone"
 gem 'marionette-rails'
+gem 'bootstrap-sass', '~> 3.3.1'
+gem 'autoprefixer-rails'
+
+group :assets do
+  gem "eco"
+  gem 'spinjs-rails'
+end
 
 group :development, :test do
+  gem 'quiet_assets'
+  # Pry integration for rails
+  gem 'pry-rails'
   gem 'spring-commands-rspec'
   gem 'rspec-rails'
+  gem 'factory_girl_rails'
   gem 'guard-rspec'
-  gem 'thin'
   gem 'rb-fsevent' if `uname` =~ /Darwin/
 end
 
+
+group :test do
+  gem 'shoulda-matchers', require: false
+end

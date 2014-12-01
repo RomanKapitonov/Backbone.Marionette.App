@@ -1,5 +1,7 @@
 class HomeController < ApplicationController
   def index
-    # nothing to do
+    gon.rabl
+    @user ||= current_user
+    gon.rabl template: 'app/views/users/show.json.rabl', as: "current_user"
   end
 end

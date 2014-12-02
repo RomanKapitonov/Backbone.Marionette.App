@@ -1,0 +1,12 @@
+<div id="new-user-session">
+  <div class="row">
+    <div class="large-12 columns">
+      <label>Enter your credentials</label>
+      <div class="large-6">
+        <input type="email" name="email" placeholder="Email" />
+        <input type="password" name="password" placeholder="Password" />
+        <input type="submit" value="Sign In">
+      </div>
+    </div>
+  </div>
+</div>

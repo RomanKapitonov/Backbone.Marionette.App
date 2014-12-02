@@ -10,5 +10,13 @@
 <body>
 <%= yield %>
 
+<%= javascript_tag do %>
+  $(function() {
+    ClientApp.start({
+      currentUser: gon.current_user
+    });
+  });
+<% end %>
+
 </body>
 </html>

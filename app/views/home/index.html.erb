@@ -1,13 +1,7 @@
-<div id="header-region"></div>
-<div id="main-region">
-  <div id="sidebar-region"></div>
+<div id="wrap">
+  <div id="header-region"></div>
+  <div id="main-region">
+    <div id="sidebar-region"></div>
+  </div>
+  <div id="footer-region"></div>
 </div>
-<div id="footer-region"></div>
-
-<%= javascript_tag do %>
-  $(function() {
-    ClientApp.start({
-      currentUser: gon.current_user
-    });
-  });
-<% end %>

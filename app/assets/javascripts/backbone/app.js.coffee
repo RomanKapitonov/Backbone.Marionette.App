@@ -2,6 +2,8 @@
 
   App = new Marionette.Application
 
+  App.rootRoute = "sign_in"
+
   App.on "before:start", (options) ->
     @currentUser = App.request "set:current:user", options.currentUser
 
@@ -19,5 +21,6 @@
   App.on "start", (options) ->
     if Backbone.history
       Backbone.history.start()
+      @navigate(@rootRoute, trigger: true) unless @currentUser.get("id")
 
   App

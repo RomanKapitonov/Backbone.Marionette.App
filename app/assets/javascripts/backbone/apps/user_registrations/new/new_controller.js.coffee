@@ -7,6 +7,9 @@
       newView = @getNewView user_registration
       App.mainRegion.show newView
 
+    signUp: ->
+      alert(123)
+
     getNewView: (user_registration) ->
       new New.UserRegistration
         model: user_registration

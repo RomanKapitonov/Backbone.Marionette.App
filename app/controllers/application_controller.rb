@@ -5,6 +5,6 @@ class ApplicationController < ActionController::Base
 
   # TODO rkapitonov: remove afterwards
   def current_user
-    User.first
+    # User.first
   end
 end

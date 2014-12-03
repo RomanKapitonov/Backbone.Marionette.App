@@ -1,2 +1,4 @@
 asset 'backbone'
 asset 'marionette'
+asset 'bootstrap-sass-official'
+asset 'font-awesome'

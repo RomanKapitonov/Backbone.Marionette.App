@@ -1,6 +1,7 @@
 @ClientApp.module "Entities", (Entities, App, Backbone, Marionette, $, _) ->
 
   class Entities.UserRegistration extends Entities.Model
+    url: -> Routes.user_registration_path()
 
   API =
     newUserRegistration: ->

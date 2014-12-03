@@ -1,0 +1,38 @@
+//colors
+$color_moon_raker_approx: #ddccee;
+$color_black_russian_approx: #110022;
+$color_gallery_approx: #eee;
+$gallery: #efefef;
+
+//fonts
+$font_0: Arial;
+$font_1: sans-serif;
+
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+h1 {
+  font-family: $font_0, $font_1;
+  color: #DDCCEE;
+}
+.lead {
+  color: #DDCCEE;
+}
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100%;
+  background-color: $color_black_russian_approx;
+  color: $color_gallery_approx;
+  overflow: hidden;
+  a {
+    color: $gallery;
+    text-decoration: none;
+  }
+}
+.v-center {
+  margin-top: 7%;
+}

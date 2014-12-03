@@ -19,5 +19,23 @@ module Velotravel
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
+    # Bower asset paths
+    bower_root = root.join('vendor', 'assets', 'bower_components')
+    bower_root.to_s.tap do |bower_path|
+      config.sass.load_paths << bower_path
+      config.assets.paths << bower_path
+    end
+
+    bootstrap_fonts_root = root.join('vendor', 'assets', 'bower_components', 'bootstrap-sass-official', 'assets', 'fonts')
+    bootstrap_fonts_root.to_s.tap do |font_path|
+      config.assets.paths << font_path
+    end
+
+    # Precompile Fonts fonts
+    config.assets.precompile << %r(.*.(?:eot|svg|ttf|woff)$)
+
+    # Minimum Sass number precision required by bootstrap-sass
+    ::Sass::Script::Number.precision = [10, ::Sass::Script::Number.precision].max
   end
 end

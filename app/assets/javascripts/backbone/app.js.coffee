@@ -14,7 +14,7 @@
     App.currentUser
 
   App.addInitializer ->
-    App.module("UserSessionsApp").start()
+    # App.module("UserSessionsApp").start()
 
   App.on "start", (options) ->
     if Backbone.history

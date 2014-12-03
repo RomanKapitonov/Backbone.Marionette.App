@@ -7,7 +7,7 @@
         <input type="text" name="last_name" placeholder="Last Name" />
         <input type="email" name="email" placeholder="Email" />
         <input type="password" name="password" placeholder="Password" />
-        <input type="submit" value="Sign In">
+        <input type="submit" value="Sign Up">
       </div>
     </div>
   </div>

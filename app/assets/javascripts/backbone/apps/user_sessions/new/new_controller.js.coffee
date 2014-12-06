@@ -5,7 +5,8 @@
       user_session = App.request "new:user_session:entity"
 
       newView = @getNewView user_session
-      App.mainRegion.show newView
+
+      App.mainLayout.mainRegion.show(newView)
 
     getNewView: (user_session) ->
       new New.UserSession

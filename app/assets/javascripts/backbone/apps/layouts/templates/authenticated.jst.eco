@@ -1,1 +1,5 @@
-authenticated
+<div id="header-region"></div>
+<div id="content-region">
+  <div id="sidebar-region"></div>
+</div>
+<div id="footer-region"></div>

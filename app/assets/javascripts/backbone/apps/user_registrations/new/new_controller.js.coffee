@@ -5,7 +5,7 @@
       user_registration = App.request "new:user_registration:entity"
 
       newView = @getNewView user_registration
-      App.mainRegion.show newView
+      App.mainLayout.mainRegion.show newView
 
     getNewView: (user_registration) ->
       new New.UserRegistration

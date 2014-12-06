@@ -6,11 +6,10 @@
 
   App.on "before:start", (options) ->
     @currentUser = App.request "set:current:user", options.currentUser
+    @environment = App.request "get:environment"
 
   App.addRegions
-    headerRegion: "#main-region"
     mainRegion: "#main-region"
-    footerRegion: "#footer-region"
 
   App.reqres.setHandler "get:current:user", ->
     App.currentUser
@@ -22,5 +21,10 @@
     if Backbone.history
       Backbone.history.start()
       @navigate(@rootRoute, trigger: true) unless @currentUser.get("id")
+
+    # if @currentUser
+    #   App.mainRegion.show(new App.Layouts.Unauthenticated)
+    # else
+    #   App.mainRegion.show(new App.Layouts.Authenticated)
 
   App

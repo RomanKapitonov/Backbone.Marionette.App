@@ -1,14 +1,11 @@
 @ClientApp.module "UserRegistrationsApp.New", (New, App, Backbone, Marionette, $, _) ->
 
-  New.Controller =
-    newUserRegistration: ->
+  class New.Controller extends App.Controllers.Application
+    initialize: ->
       user_registration = App.request "new:user_registration:entity"
 
       newView = @getNewView user_registration
       App.mainRegion.show newView
-
-    signUp: ->
-      alert(123)
 
     getNewView: (user_registration) ->
       new New.UserRegistration

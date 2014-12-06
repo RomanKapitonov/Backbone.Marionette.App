@@ -15,8 +15,15 @@
 //= require backbone
 //= require marionette
 //= require js-routes
+
 //= require_tree ./backbone/config
+
 //= require backbone/app
+
+//= require_tree ./backbone/lib/entities
+//= require_tree ./backbone/lib/views
+//= require_tree ./backbone/lib/controllers
+
 //= require_tree ./backbone/entities
 //= require_tree ./backbone/views
 //= require_tree ./backbone/apps

@@ -1,7 +1,7 @@
 @ClientApp.module "UserSessionsApp.New", (New, App, Backbone, Marionette, $, _) ->
 
-  New.Controller =
-    newUserSession: ->
+  class New.Controller extends App.Controllers.Application
+    initialize: ->
       user_session = App.request "new:user_session:entity"
 
       newView = @getNewView user_session

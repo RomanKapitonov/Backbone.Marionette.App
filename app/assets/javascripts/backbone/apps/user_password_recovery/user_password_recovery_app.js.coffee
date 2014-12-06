@@ -6,10 +6,10 @@
 
   API =
     newUserPasswordRecovery: ->
-      UserPasswordRecoveryApp.New.Controller.newUserPasswordRecovery()
+      new UserPasswordRecoveryApp.New.Controller
 
   App.commands.setHandler "new:user_password_recovery:entity", ->
-    API.newUserPasswordRecovery
+    API.newUserPasswordRecovery()
 
   App.addInitializer ->
     new UserPasswordRecoveryApp.Router

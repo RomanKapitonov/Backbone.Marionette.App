@@ -1,51 +1,31 @@
-<!-- <div id="new-user-session">
-  <div class="row">
-    <div class="large-12 columns">
-      <label>Enter your credentials</label>
-      <div class="large-6">
-        <input type="email" name="email" placeholder="Email" />
-        <input type="password" name="password" placeholder="Password" />
-        <input type="submit" value="Sign In">
+<div class="row">
+  <div class="col-lg-12 text-center v-center">
+    <h1>Hello,</h1>
+    <p class="lead">Enter your email and password to sign in:</p>
+    <br><br><br>
+
+    <form class="col-lg-12">
+      <div style="width:340px; text-align:center; margin:0 auto;">
+        <input class="form-control input-lg" title="Put you email here" placeholder="Enter your email address" type="text">
       </div>
-    </div>
+      <br>
+      <div class="input-group" style="width:340px; text-align:center; margin:0 auto;">
+        <input class="form-control input-lg" title="Put you password" placeholder="Enter your password" type="password">
+        <span class="input-group-btn">
+          <input class="btn btn-lg btn-primary" type="submit" value="OK" />
+        </span>
+      </div>
+    </form>
   </div>
-</div> -->
+</div>
 
-
-<div class="container-full">
-  <div class="row">
-    <div class="col-lg-12 text-center v-center">
-      <h1>Hello,</h1>
-      <p class="lead">Enter your email and password to sign in:</p>
-      <br><br><br>
-
-      <form class="col-lg-12">
-        <div style="width:340px; text-align:center; margin:0 auto;">
-          <input class="form-control input-lg" title="Put you email here" placeholder="Enter your email address" type="text">
-        </div>
-        <br>
-        <div class="input-group" style="width:340px; text-align:center; margin:0 auto;">
-          <input class="form-control input-lg" title="Put you password" placeholder="Enter your password" type="text">
-          <span class="input-group-btn">
-            <input class="btn btn-lg btn-primary" type="submit" value="OK" />
-          </span>
-        </div>
-      </form>
-    </div>
-
+<div class="row">
+  <div class="col-lg-12 text-center v-center" style="font-size:39pt;">
+  <p class="lead">Or use an existing account:</p>
+    <a href="#"><i class="fa fa-vk"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-google-plus"></i></a>
+    <a href="#"><i class="fa fa-github"></i></a>
   </div>
-
-  <div class="row">
-    <div class="col-lg-12 text-center v-center" style="font-size:39pt;">
-    <p class="lead">Or use an existing account:</p>
-      <a href="#"><i class="fa fa-vk"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-google-plus"></i></a>
-      <a href="#"><i class="fa fa-github"></i></a>
-    </div>
-
-  </div>
-
-<br><br><br><br><br>
 </div>

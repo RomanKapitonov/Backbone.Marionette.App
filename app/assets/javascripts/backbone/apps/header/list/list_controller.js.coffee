@@ -1,8 +1,8 @@
 @ClientApp.module "HeaderApp.List", (List, App, Backbone, Marionette, $, _) ->
 
-  List.Controller =
+  class List.Controller extends App.Controllers.Application
 
-    listHeader: ->
+    initialize: ->
       links = App.request "header:entities"
 
       headerView = @getHeaderView links

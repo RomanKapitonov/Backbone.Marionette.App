@@ -6,10 +6,10 @@
 
   API =
     newUserSession: ->
-      UserSessionsApp.New.Controller.newUserSession()
+      new UserSessionsApp.New.Controller
 
   App.commands.setHandler "new:user_session:entity", ->
-    API.newUserSession
+    API.newUserSession()
 
   App.addInitializer ->
     new UserSessionsApp.Router

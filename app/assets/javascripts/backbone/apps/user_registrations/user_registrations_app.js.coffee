@@ -6,9 +6,7 @@
 
   API =
     newUserRegistration: ->
-      UserRegistrationsApp.New.Controller.newUserRegistration()
-    singUp: ->
-      UserRegistrationsApp.New.Controller.signUp()
+      new UserRegistrationsApp.New.Controller
 
   App.commands.setHandler "new:user_session:entity", ->
     API.newUserRegistration

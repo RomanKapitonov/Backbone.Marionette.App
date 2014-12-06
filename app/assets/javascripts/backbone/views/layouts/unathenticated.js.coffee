@@ -2,7 +2,7 @@
 
   class Layouts.Unauthenticated extends App.Views.Layout
     template: "layouts/templates/unauthenticated"
-    className: "main-region-container unauthenticated-container"
+    className: "main-region-container unauthenticated"
 
     regions:
       mainRegion: "#main-region"

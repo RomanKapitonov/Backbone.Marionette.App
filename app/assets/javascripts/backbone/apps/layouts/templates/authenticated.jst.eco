@@ -1,5 +1,9 @@
-<div id="header-region"></div>
-<div id="content-region">
-  <div id="sidebar-region"></div>
-</div>
+<div id="wrap">
+  <div id="header-region"></div>
+  <div id="content-region">
+    <div id="sidebar-region"></div>
+  </div>
+  <div id="push"></div>
+ </div>
+
 <div id="footer-region"></div>

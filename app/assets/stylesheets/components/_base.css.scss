@@ -1,13 +1,3 @@
-//colors
-$color_moon_raker_approx: #ddccee;
-$color_black_russian_approx: #110022;
-$color_gallery_approx: #eee;
-$gallery: #efefef;
-
-//fonts
-$font_0: Arial;
-$font_1: sans-serif;
-
 html {
   height: 100%;
 }
@@ -33,8 +23,11 @@ h1 {
   height: inherit;
 }
 
-.unauthenticated-container {
+.authenticated, .unauthenticated{
   height: inherit;
+}
+
+.unauthenticated {
   background-color: $color_black_russian_approx;
   margin: 0 auto;
   width: 100%;

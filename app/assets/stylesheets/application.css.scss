@@ -5,4 +5,9 @@ $icon-font-path: "bootstrap-sass-official/assets/fonts/bootstrap/";
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap-sprockets";
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap";
 
-@import "components/base";
+@import "utils/_vars";
+
+@import "components/_base";
+
+@import "apps/header";
+@import "apps/footer";

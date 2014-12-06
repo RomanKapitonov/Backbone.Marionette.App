@@ -6,5 +6,6 @@
 
   class List.Headers extends App.Views.CompositeView
     template: "header/list/templates/headers"
+    className: "header-content"
     childView: List.Header
     childViewContainer: "ul"

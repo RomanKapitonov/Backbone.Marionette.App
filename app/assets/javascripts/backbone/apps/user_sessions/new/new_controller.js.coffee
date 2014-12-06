@@ -6,7 +6,7 @@
 
       newView = @getNewView user_session
 
-      App.mainLayout.mainRegion.show(newView)
+      # App.mainLayout.mainRegion.show(newView)
 
     getNewView: (user_session) ->
       new New.UserSession

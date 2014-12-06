@@ -6,7 +6,7 @@
       links = App.request "header:entities"
 
       headerView = @getHeaderView links
-      App.headerRegion.show headerView
+      App.mainLayout.headerRegion.show headerView
 
     getHeaderView: (links) ->
       new List.Headers

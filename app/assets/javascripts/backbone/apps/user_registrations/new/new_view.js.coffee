@@ -6,20 +6,19 @@
     events:
       "click input[type='submit']": "signUp"
 
-    bindings:
-      "input[name='first_name']": 'firstName'
-      "input[name='last_name']": 'lastName'
-      "input[name='email']": 'email'
-      "input[name='password']": 'password'
+    initialize: ->
+      super()
+      @modelBinder = new Backbone.ModelBinder
 
     render: ->
       super()
-      @stickit()
+      @modelBinder.bind(@model, @el)
 
-    signUp: ->
+    signUp: (event) ->
+      event.preventDefault()
+
       @model.save @model.attributes,
         success: (model, response, options) ->
-          debugger
+          App.request("set:current:user", new @ClientApp.Entities.User(response))
         error: (model, response, options) ->
           debugger
-

@@ -14,7 +14,7 @@
 //= require underscore
 //= require backbone
 //= require marionette
-//= require backbone.stickit/backbone.stickit
+//= require backbone.modelbinder.js
 //= require js-routes
 
 //= require_tree ./backbone/config

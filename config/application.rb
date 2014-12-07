@@ -20,6 +20,11 @@ module Velotravel
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
+    # DeviseController setup
+    config.to_prepare do
+      DeviseController.respond_to :json
+    end
+
     # Bower asset paths
     bower_root = root.join('vendor', 'assets', 'bower_components')
     bower_root.to_s.tap do |bower_path|

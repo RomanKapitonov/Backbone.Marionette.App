@@ -16,8 +16,7 @@
 
   App.addInitializer ->
     if @currentUser
-      App.mainLayout = new App.Layouts.Authenticated
-      # App.mainLayout = new App.Layouts.Unauthenticated
+      App.mainLayout = new App.Layouts.Unauthenticated
     else
       App.mainLayout = new App.Layouts.Authenticated
 

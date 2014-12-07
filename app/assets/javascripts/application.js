@@ -14,6 +14,7 @@
 //= require underscore
 //= require backbone
 //= require marionette
+//= require backbone.stickit/backbone.stickit
 //= require js-routes
 
 //= require_tree ./backbone/config
@@ -21,6 +22,7 @@
 //= require backbone/app
 
 //= require_tree ./backbone/lib/entities
+//= require_tree ./backbone/lib/routers
 //= require_tree ./backbone/lib/views
 //= require_tree ./backbone/lib/controllers
 

@@ -1,6 +1,6 @@
 @ClientApp.module "UserRegistrationsApp", (UserRegistrationsApp, App, Backbone, Marionette, $, _) ->
 
-  class UserRegistrationsApp.Router extends Marionette.AppRouter
+  class UserRegistrationsApp.Router extends App.Routers.BaseRouter
     appRoutes:
       "sign_up" : "newUserRegistration"
 

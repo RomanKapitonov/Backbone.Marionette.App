@@ -1,14 +1,39 @@
-<div id="new-user-session">
-  <div class="row">
-    <div class="large-12 columns">
-      <label>Enter your credentials</label>
-      <div class="large-6">
-        <input type="text" name="first_name" placeholder="First Name" />
-        <input type="text" name="last_name" placeholder="Last Name" />
-        <input type="email" name="email" placeholder="Email" />
-        <input type="password" name="password" placeholder="Password" />
-        <input type="submit" value="Sign Up">
-      </div>
+<div class="col-lg-12 text-center v-center">
+  <h1>Hello,</h1>
+  <p class="lead">Enter your email and password to sign in:</p>
+  <br><br>
+
+  <form id="sign-up-form" class="col-lg-12">
+    <div class="auth-input-container">
+      <input name="first_name" class="form-control input-lg" title="Put you first name here" placeholder="Enter your first name" type="text">
     </div>
+    <br>
+    <div class="auth-input-container">
+      <input name="last_name" class="form-control input-lg" title="Put you last name here" placeholder="Enter your last name" type="text">
+    </div>
+    <br>
+    <div class="auth-input-container">
+      <input name="email" class="form-control input-lg" title="Put you email here" placeholder="Enter your email address" type="text">
+    </div>
+    <br>
+    <div class="input-group auth-input-container">
+      <input name="password" class="form-control input-lg" title="Put you password" placeholder="Enter your password" type="password">
+      <span class="input-group-btn">
+        <input class="btn btn-lg btn-primary" type="submit" value="OK" />
+      </span>
+    </div>
+    <br>
+    <a href="#sign_in" class="sign-in">Sign In</a>
+  </form>
+</div>
+
+<div class="row">
+  <div class="col-lg-12 text-center v-center" style="font-size:39pt;">
+    <p class="lead">Or use an existing account:</p>
+    <a href="#"><i class="fa fa-vk"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-google-plus"></i></a>
+    <a href="#"><i class="fa fa-github"></i></a>
   </div>
 </div>

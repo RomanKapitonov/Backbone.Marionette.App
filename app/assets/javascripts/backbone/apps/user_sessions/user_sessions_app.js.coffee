@@ -1,6 +1,6 @@
 @ClientApp.module "UserSessionsApp", (UserSessionsApp, App, Backbone, Marionette, $, _) ->
 
-  class UserSessionsApp.Router extends Marionette.AppRouter
+  class UserSessionsApp.Router extends App.Routers.BaseRouter
     appRoutes:
       "sign_in" : "newUserSession"
 

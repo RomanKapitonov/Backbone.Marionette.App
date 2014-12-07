@@ -1,6 +1,6 @@
 @ClientApp.module "UserPasswordRecoveryApp", (UserPasswordRecoveryApp, App, Backbone, Marionette, $, _) ->
 
-  class UserPasswordRecoveryApp.Router extends Marionette.AppRouter
+  class UserPasswordRecoveryApp.Router extends App.Routers.BaseRouter
     appRoutes:
       "recover" : "newUserPasswordRecovery"
 

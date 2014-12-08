@@ -6,13 +6,15 @@
     events:
       "click input[type='submit']": "signUp"
 
-    initialize: ->
-      super()
-      @modelBinder = new Backbone.ModelBinder
+    bindings:
+      '#first_name': 'firtst_name'
+      '#last_name': 'last_name'
+      '#email': 'email'
+      '#password': 'password'
 
     render: ->
       super()
-      @modelBinder.bind(@model, @el)
+      @stickit()
 
     signUp: (event) ->
       event.preventDefault()

@@ -1,5 +1,6 @@
 asset 'backbone'
-asset 'backbone.modelbinder'
+asset 'backbone.stickit'
+asset 'backbone.validation'
 asset 'marionette'
 asset 'bootstrap-sass-official'
 asset 'font-awesome'
